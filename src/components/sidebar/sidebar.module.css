@@ -1,0 +1,14 @@
+.container{
+    background-color: var(--dark);
+    height: 100%;
+    width: 17.5rem;
+    padding-top: 40px;
+    padding-left: 21px;
+color:white;
+
+}
+
+.navlist{
+    display: flex;
+    flex-direction: column;
+}

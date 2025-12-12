@@ -21,7 +21,7 @@ const navigationLinks =[
     },
 ];
 
-const musicCateogory =[
+const musicCategory =[
     "Running Playlist",
     "21st Birthday",
     "April 2023",
@@ -60,9 +60,15 @@ const Sidebar = () => {
         <LibraryBig/><span>Your Library</span></NavLink>
     </li> */}
     </ul> 
+    <ul className={styles.categoryList}>
+        {
+musicCategory?.map((category) =>{
+    return <li key={category} className={(styles.categoryListItem)}>{category}</li>
+})}
+    </ul>
 </div>
 
-    )
+    );
 }
 
 export default Sidebar;

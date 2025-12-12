@@ -2,7 +2,7 @@ import {Routes, Route} from "react-router"
 import HomePage from "./pages/home"
 import LoginPage from "./pages/login"
 import RegisterPage from "./pages/register"
-
+import Counter from "./components/counter"
 
 function App() {
  
@@ -10,6 +10,7 @@ function App() {
   return (
     <>
     <Routes>
+      <Route path="/" element={ <HomePage/>}/>
       <Route path="/" element={ <HomePage/>}/>
       <Route path ="/login" element={< LoginPage/>}/>
       <Route path="/register" element={<RegisterPage/>}/>

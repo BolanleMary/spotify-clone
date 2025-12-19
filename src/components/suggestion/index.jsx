@@ -6,7 +6,7 @@ const Suggestion = () =>{
 
     useEffect(() =>{
  isLoading
-        fetch("https://jsonpalceholder.typicode.com/users")
+        fetch("https://jsonplaceholder.typicode.com/users")
         .then((response) =>response.json())
         .then((data) =>{
             setUsers(data)
@@ -18,10 +18,12 @@ const Suggestion = () =>{
         });
     }, [])
     return <div style={{color: "white"}}>
-       <div>{isLoading ? "loading" : ""}</div>
-    {
+<h4 >Discovery Pick for you</h4>
+
+    //    <div>{isLoading ? "loading" : ""}</div>
+    // {
     users?.map((users) =>{
-        return <div>{users.name}</div>
+        return <div key={users.id}>{users.name}</div>
     })
 }
     </div>

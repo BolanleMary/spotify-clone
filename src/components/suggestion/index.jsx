@@ -16,8 +16,9 @@ const Suggestion = () =>{
             console.log(err)
             setIsLoading(false)
         });
-    }, [])
-    return <div style={{color: "white"}}>
+    }, 
+    [])
+    return  <div style={{color: "white"}}>
 <h4 >Discovery Pick for you</h4>
 
     //    <div>{isLoading ? "loading" : ""}</div>
@@ -26,6 +27,7 @@ const Suggestion = () =>{
         return <div key={users.id}>{users.name}</div>
     })
 }
+
     </div>
 }
 

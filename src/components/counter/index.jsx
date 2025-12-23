@@ -1,5 +1,5 @@
 import styles from "./counter.module.css";
-import {useState} from "react"
+import {useState, useEffect} from "react"
 
 const Counter =() => {
 const [counter, setCounter] =useState(0)
@@ -7,8 +7,16 @@ const onClickHandler = () =>{
 setCounter(counter + 1);
     };
 
+    useEffect(() =>{
+console.log('I am from the effect')
+
+return() =>{
+    console.log("unmounted")
+}
+    }, [counter])
 
 
+()
     
     
     return(

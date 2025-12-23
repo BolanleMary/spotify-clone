@@ -1,9 +1,9 @@
 import { NavLink } from "react-router"
 import { DashboardLayout } from "../components/dashboardLayout.jsx";
 import Suggestion from "../components/suggestion/index.jsx";
+import styles from "styled-components"
 
-
-
+const Button = styles.button`
 color: gold;
 background-color: ${props => props?.variant === "secondary" ? 'purple' : 'blue'};
 padding: 10px 18px;
